@@ -8,7 +8,7 @@ import { Subject } from 'rxjs';
 export class SubjectServices{
     private type: any = "";
     private subject = new Subject<any>();
-    observable = this.subject.asObservable();
+    observable$ = this.subject.asObservable();
 
     getData() : any {
         return this.type;
